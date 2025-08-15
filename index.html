@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr" id="html">
+  <head>
+    <meta charset="utf-8">
+    <title id="title">URL Helper</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./css/main.css">
+    <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./medias/app-maskable-icons/app_icon_152.png">
+    <meta name="description" content="L'assistant idéal pour l'analyse de vos URL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="" id="appleTitle">
+    <meta name="msapplication-TileImage" content="./medias/app-maskable-icons/app_icon_144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+  </head>
+
+  <body id="body">
+
+    <header id="header">
+      <img class="logo" src="./medias/images/logo.webp" />
+      <button id="randomButton" class="random-button" onclick="onRandomUrlClick()">random</button>
+    </header>
+
+    <main id="main">
+      <section id="input-display">
+        <h1>Input URL</h1>
+        <input id="urlInput" type="text" placeholder="Paste URL here" oninput="onUrlInputChange()"/>
+        <span id="urlError"></span>
+      </section>
+      <section id="informations-display"></section>
+      <section id="parameters-display"></section>
+    </main>
+
+    <footer id="footer"></footer>
+    <div id="toastContainer"></div>
+  </body>
+
+  <script type="module" src="./js/main.js"></script>
+
+</html>
